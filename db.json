@@ -14,7 +14,8 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "name": "typicode",
+    "log": "json-server --watch db.json"
   },
   "employees": [
     {
