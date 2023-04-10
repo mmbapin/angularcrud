@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,9 +17,15 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { DeleteConfimationComponent } from './delete-confimation/delete-confimation.component';
 
 @NgModule({
-  declarations: [AppComponent, EmpAddEditComponent],
+  declarations: [AppComponent, EmpAddEditComponent, EmployeeListComponent, DeleteConfimationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -36,8 +42,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatSelectModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatSnackBarModule
   ],
-  providers: [],
+  providers: [AppComponent, DeleteConfimationComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

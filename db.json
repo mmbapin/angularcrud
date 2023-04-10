@@ -17,18 +17,5 @@
     "name": "typicode",
     "log": "json-server --watch db.json"
   },
-  "employees": [
-    {
-      "firstName": "asdasd",
-      "lastName": "adasd",
-      "email": "da@gasd.com",
-      "dob": "2023-04-10T18:00:00.000Z",
-      "gender": "male",
-      "education": "Diploma",
-      "company": "asd",
-      "experience": "12",
-      "package": "212",
-      "id": 1
-    }
-  ]
+  "employees": []
 }
